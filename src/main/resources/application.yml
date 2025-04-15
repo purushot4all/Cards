@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: Cards
+  data:
+    mongodb:
+      uri: mongodb://root:admin@127.0.0.1:27017/card_management?authSource=admin
+      database: card_management
+      username: root
+      password: admin
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration
+  main:
+    allow-bean-definition-overriding: true
+
+server:
+  port: 9999
